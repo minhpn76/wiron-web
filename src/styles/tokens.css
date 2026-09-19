@@ -1,0 +1,32 @@
+/* Source: html/index.html :root — canonical token extraction for WIRO-1 */
+:root {
+  --bg: oklch(98.6% 0.008 68);
+  --surface: oklch(100% 0 0);
+  --fg: oklch(20% 0.015 40);
+  --muted: oklch(53% 0.02 58);
+  --border: oklch(90% 0.01 75);
+  --accent: oklch(62% 0.22 26);
+  --accent-soft: color-mix(in oklch, var(--accent) 12%, transparent);
+  --accent-strong: color-mix(in oklch, var(--accent) 88%, black);
+  --fg-soft: color-mix(in oklch, var(--fg) 6%, transparent);
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', system-ui, sans-serif;
+  --font-mono: ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+  --fs-h1: clamp(42px, 6.2vw, 74px);
+  --fs-h2: clamp(30px, 3.8vw, 44px);
+  --fs-h3: 20px;
+  --fs-lead: 18px;
+  --fs-body: 15.5px;
+  --fs-meta: 12.5px;
+  --gap-xs: 8px;
+  --gap-sm: 12px;
+  --gap-md: 20px;
+  --gap-lg: 32px;
+  --gap-xl: 56px;
+  --gap-2xl: 96px;
+  --container: 1160px;
+  --gutter: 28px;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+}
