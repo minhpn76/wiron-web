@@ -1,11 +1,690 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="WIRON — The Brand for Websites, Tools, Cloud & Games">
-  <section class="section">
-    <div class="container">
-      <h1>WIRON shell probe</h1>
-      <p class="lead">Tokens + BaseLayout wired — build smoke test.</p>
+<BaseLayout
+  title="WIRON \u2014 The Brand for Websites, Tools, Cloud & Games | One Brand, Every Service"
+  description="WIRON is the brand that builds it all \u2014 WIRON Websites, WIRON Tools, WIRON Cloud & WIRON Games. One WIRON brand, every surface. SEO-ready, fast, human-centered."
+>
+
+
+<!-- HERO -->
+<section id="hero" class="section hero">
+  <div class="container hero-split">
+    <div>
+      <p class="eyebrow">WIRON — The Brand That Builds Everything</p>
+      <h1>One brand for your website, tools, cloud and games.</h1>
+      <p class="lead" style="margin-top:16px">Customers don't come for a homepage. They come with a problem. WIRON solves it end-to-end — from a site that ranks, to tools that remove friction, to cloud that stays up, to play that keeps them coming back.</p>
+      <div class="hero-cta" style="margin-top:22px">
+        <a href="#services" class="btn btn-primary">Explore WIRON services</a>
+        <a href="#work" class="btn btn-secondary">See live work →</a>
+      </div>
+      <div class="trust-row">
+        <span class="tag"><span class="dot"></span> SEO-native from day one</span>
+        <span class="tag"><span class="dot" style="background:oklch(68% 0.16 145)"></span> Core Web Vitals ≥ 95</span>
+        <span class="tag">GDPR · SOC 2 ready</span>
+      </div>
+      <div class="seo-badges">
+        <span class="meta" style="display:flex;gap:6px;align-items:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l7 4v6c0 5-3.5 7.5-7 8-3.5-.5-7-3-7-8V6l7-4z"/></svg> Schema.org + Open Graph auto-generated</span>
+        <span class="meta">·</span>
+        <span class="meta">Sitemap & robots.txt managed</span>
+      </div>
+
+      <!-- site search (SEO demo) -->
+      <div class="search-wrap" role="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="siteSearch" type="search" placeholder="Search WIRON: e.g. 'headless checkout' or 'game hosting'…" aria-label="Search WIRON services"/>
+      </div>
+      <p class="meta" id="searchHint" style="margin-top:8px;text-align:center">Try: website speed, cloud migration, tool automation, multiplayer</p>
     </div>
-  </section>
+
+    <div class="mock" aria-label="WIRON dashboard mock">
+      <div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-title">wiron.studio / WIRON — Live</span><span class="pill" style="margin-left:auto">All systems operational</span></div>
+      <div class="mock-body">
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px">
+          <span class="pill" style="background:color-mix(in oklch, var(--accent) 14%, white);color:var(--accent)">Websites</span>
+          <span class="tag">Tools</span><span class="tag">Cloud</span><span class="tag">Games</span>
+        </div>
+        <div class="grid-2" style="gap:10px">
+          <div class="card" style="padding:16px">
+            <p class="meta" style="font-size:11px;letter-spacing:.06em;text-transform:uppercase">Organic traffic</p>
+            <div class="row" style="align-items:baseline;gap:8px;margin-top:6px"><span class="num" style="font-size:26px;font-weight:700;letter-spacing:-.03em">+214%</span><span class="pill" style="font-size:10px;padding:2px 8px">90 days</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+            <p class="meta" style="margin-top:8px">After WIRON SEO rebuild · Lighthouse 99</p>
+          </div>
+          <div class="card" style="padding:16px">
+            <p class="meta" style="font-size:11px;letter-spacing:.06em;text-transform:uppercase">Infra cost</p>
+            <div class="row" style="align-items:baseline;gap:8px;margin-top:6px"><span class="num" style="font-size:26px;font-weight:700;letter-spacing:-.03em">−43%</span><span class="tag" style="font-size:11px">Cloud tuned</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:44%;background:oklch(68% 0.16 145)"></div></div>
+            <p class="meta" style="margin-top:8px">Same traffic, smaller bill</p>
+          </div>
+        </div>
+        <div class="mini-kpi">
+          <div><strong class="num">1.1s</strong><span>LCP · p75</span></div>
+          <div><strong class="num">0 CLS</strong><span>Layout stable</span></div>
+          <div><strong class="num">42ms</strong><span>Edge TTFB</span></div>
+        </div>
+        <div style="margin-top:14px;display:flex;gap:8px">
+          <span class="tag" style="background:var(--accent);color:white;border-color:var(--accent)">wiron.studio/docs/seo</span>
+          <span class="meta">↗ Crawlable, indexable, fast — by default.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES OVERVIEW -->
+<section id="services" class="section">
+  <div class="container stack" style="gap:28px">
+    <div class="row-between" style="align-items:end;flex-wrap:wrap">
+      <div style="max-width:56ch">
+        <p class="eyebrow">Four services. One root system.</p>
+        <h2>Pick a problem. We already have the service for it.</h2>
+        <p class="lead" style="margin-top:12px;font-size:16px">No handoffs between agencies. WIRON keeps strategy, design, engineering and growth in one place — so the site you launch is the system that scales.</p>
+      </div>
+      <p class="meta" style="max-width:28ch;text-align:right">Every engagement starts with a 45-min diagnostic. You leave with a ranked backlog — even if you don't hire us.</p>
+    </div>
+
+    <div class="grid-4">
+      <div class="card feature">
+        <div class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8"/><path d="M12 18v2"/></svg></div>
+        <h3>Websites</h3>
+        <p>Marketing sites and product sites that rank, convert and stay fast after launch. Headless, composable, editable.</p>
+        <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap"><span class="tag">Next.js · Astro</span><span class="tag">Headless CMS</span></div>
+      </div>
+      <div class="card feature">
+        <div class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.5 3.5a2.5 2.5 0 013 3L8 16l-4 1 1-4 9.5-9.5z"/><path d="M13 6l5 5"/></svg></div>
+        <h3>Tools</h3>
+        <p>Internal tools, customer portals and automations that kill busywork. From spreadsheet to system in weeks.</p>
+        <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap"><span class="tag">Portals</span><span class="tag">Automations</span></div>
+      </div>
+      <div class="card feature">
+        <div class="feature-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 18a5 5 0 000-10 6 6 0 00-10 4"/><path d="M3 18h14"/><path d="M7 14l2 2 4-4"/></svg></div>
+        <h3>Cloud</h3>
+        <p>Resilient, cost-aware cloud — migration, observability and edge. We left "it works on my machine" in 2019.</p>
+        <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap"><span class="tag">AWS · GCP</span><span class="tag">Edge</span></div>
+      </div>
+      <div class="card feature" style="background:var(--fg);color:var(--surface);border-color:var(--fg)">
+        <div class="feature-mark" style="background:transparent;border-color:color-mix(in oklch, white 18%, transparent);color:var(--surface)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 11h12M8 7h8M9 15h6M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+        <h3 style="color:var(--surface)">Games</h3>
+        <p style="color:color-mix(in oklch, white 72%, transparent)">Playable brand moments — web games, loyalty quests and interactive launches that people actually share.</p>
+        <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap"><span class="tag" style="background:transparent;color:var(--surface);border-color:color-mix(in oklch, white 22%, transparent)">WebGL · Canvas</span><span class="tag" style="background:transparent;color:var(--surface);border-color:color-mix(in oklch, white 22%, transparent)">Multiplayer</span></div>
+      </div>
+    </div>
+
+    <!-- Interactive service detail -->
+    <div class="card" style="padding:22px">
+      <div class="svc-tabs" role="tablist" aria-label="Service details">
+        <button class="svc-tab active" data-tab="websites" role="tab" aria-selected="true">Websites — Acquire</button>
+        <button class="svc-tab" data-tab="tools" role="tab">Tools — Operate</button>
+        <button class="svc-tab" data-tab="cloud" role="tab">Cloud — Scale</button>
+        <button class="svc-tab" data-tab="games" role="tab">Games — Retain</button>
+      </div>
+
+      <div id="panel-websites" class="svc-panel active">
+        <div class="svc-grid">
+          <div>
+            <h3>Websites that earn their keep</h3>
+            <p style="color:var(--muted);margin:8px 0 0">Strategy → Content system → Design → Ship → Measure. Pages are structured data first, pixels second — so Google understands them before a human sees them.</p>
+            <ul class="check-list">
+              <li><i>✓</i> <span><strong style="color:var(--fg)">SEO foundation:</strong> semantic HTML, JSON-LD, sitemap, hreflang, OG/Twitter, canonicals — generated, not hoped for.</span></li>
+              <li><i>✓</i> <span><strong style="color:var(--fg)">Editor-friendly:</strong> non-devs ship pages in minutes. Preview, schedule, roll back.</span></li>
+              <li><i>✓</i> <span><strong style="color:var(--fg)">Performance budget:</strong> LCP &lt; 1.2s enforced in CI. Regressions block deploy.</span></li>
+            </ul>
+            <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap"><a href="#contact" class="btn btn-primary btn-sm">Audit my site</a><a href="#seo" class="btn btn-ghost btn-sm btn-arrow">How we handle SEO</a></div>
+          </div>
+          <div class="card" style="background:var(--bg);padding:18px">
+            <p class="meta" style="font-weight:600;color:var(--fg);letter-spacing:.04em;text-transform:uppercase">Deliverables</p>
+            <div style="margin-top:12px;display:grid;gap:10px">
+              <div class="row" style="justify-content:space-between;padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:10px"><span style="font-size:13px;font-weight:600">Information architecture</span><span class="meta">Week 1</span></div>
+              <div class="row" style="justify-content:space-between;padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:10px"><span style="font-size:13px;font-weight:600">Design system + components</span><span class="meta">Week 2–3</span></div>
+              <div class="row" style="justify-content:space-between;padding:10px 12px;background:var(--accent);color:white;border:1px solid var(--accent);border-radius:10px"><span style="font-size:13px;font-weight:650">Shipped & indexed</span><span style="font-size:12px;opacity:.9">Week 4</span></div>
+            </div>
+            <p class="meta" style="margin-top:12px">Typical: 3–5 weeks. You own all code and content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-tools" class="svc-panel">
+        <div class="svc-grid">
+          <div>
+            <h3>Tools that remove work</h3>
+            <p style="color:var(--muted);margin:8px 0 0">We turn the doc, sheet or inbox you live in into a real product — with permissions, audit log and a UI people want to use.</p>
+            <ul class="check-list">
+              <li><i>✓</i> <span>Customer portals, admin consoles, approval flows, quoting engines.</span></li>
+              <li><i>✓</i> <span>Integrations: Stripe, HubSpot, Notion, Airtable, Postgres — bidirectional.</span></li>
+              <li><i>✓</i> <span>Shipped with analytics so you can see what the tool saved.</span></li>
+            </ul>
+            <div style="margin-top:16px"><a href="#contact" class="btn btn-primary btn-sm">Map my workflow</a></div>
+          </div>
+          <div class="card" style="background:var(--bg);padding:18px">
+            <p class="meta" style="font-weight:600;color:var(--fg)">Example · Quote-to-cash in 11 days</p>
+            <p class="meta" style="margin-top:8px">A services firm moved from Sheets + email to a WIRON portal. Quotes went from 2 days → 18 minutes. Errors to zero.</p>
+            <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><span class="pill">−94% time</span><span class="tag">SOC 2 logged</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-cloud" class="svc-panel">
+        <div class="svc-grid">
+          <div>
+            <h3>Cloud you don't have to babysit</h3>
+            <p style="color:var(--muted);margin:8px 0 0">Migrate without downtime, observe without noise, pay without surprises. Infra as code, preview envs, edge cache.</p>
+            <ul class="check-list">
+              <li><i>✓</i> <span>Zero-downtime migration & IaC (Terraform / Pulumi).</span></li>
+              <li><i>✓</i> <span>Observability: traces, logs, SLOs — one pane, paged only when it matters.</span></li>
+              <li><i>✓</i> <span>FinOps: rightsizing + autoscale + spot — monthly report with savings.</span></li>
+            </ul>
+          </div>
+          <div class="card" style="background:var(--bg);padding:18px">
+            <p class="meta" style="font-weight:600;color:var(--fg)">Stack</p>
+            <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><span class="tag">AWS</span><span class="tag">GCP</span><span class="tag">Cloudflare</span><span class="tag">Vercel Edge</span><span class="tag">Postgres</span><span class="tag">Redis</span></div>
+            <p class="meta" style="margin-top:14px">We stay out of religious wars. We pick what fits your traffic and team.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-games" class="svc-panel">
+        <div class="svc-grid">
+          <div>
+            <h3>Games that make brands memorable</h3>
+            <p style="color:var(--muted);margin:8px 0 0">Lightweight web games for launches, loyalty and learning. No app install, runs on any phone, shareable in a link.</p>
+            <ul class="check-list">
+              <li><i>✓</i> <span>Campaign games, product configurators, training sims.</span></li>
+              <li><i>✓</i> <span>Leaderboards, rewards, referrals built in.</span></li>
+              <li><i>✓</i> <span>Analytics: completion, share rate, return visits.</span></li>
+            </ul>
+          </div>
+          <div class="card" style="background:var(--bg);padding:18px">
+            <p class="meta" style="font-weight:600;color:var(--fg)">Play it</p>
+            <div style="margin-top:10px;display:grid;grid-template-columns:repeat(2,1fr);gap:8px">
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center"><div style="font-size:22px">🎯</div><p style="margin:6px 0 0;font-size:13px;font-weight:600">Drop Quest</p><p class="meta">Avg. 3:42 play</p></div>
+              <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center"><div style="font-size:22px">🧩</div><p style="margin:6px 0 0;font-size:13px;font-weight:600">Config Lab</p><p class="meta">32% → lead</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS (problem -> service) -->
+<section id="solutions" class="section">
+  <div class="container">
+    <div style="max-width:56ch;margin-bottom:28px">
+      <p class="eyebrow">Solutions — Come with a problem, leave with a plan</p>
+      <h2>Your customers are already searching. We make sure they find WIRON.</h2>
+      <p class="lead" style="margin-top:10px;font-size:16px">SEO isn't a checkbox. It's how the site is built — content model, URL design, speed, and structured data working together.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card" style="padding:22px">
+        <p class="meta" style="color:var(--accent);font-weight:700;letter-spacing:.06em;text-transform:uppercase">Problem → Service</p>
+        <h3 style="margin-top:8px">"We rebuilt the site and traffic dropped."</h3>
+        <p style="color:var(--muted);font-size:14px;margin-top:8px">Pre-migration audit, redirect map, content parity, and index monitoring. We recover, then grow.</p>
+        <div style="margin-top:14px;display:flex;gap:8px;align-items:center"><span class="tag" style="background:var(--fg);color:white;border-color:var(--fg)">Websites</span><span class="meta">→ SEO recovery</span></div>
+      </div>
+      <div class="card" style="padding:22px">
+        <p class="meta" style="color:var(--accent);font-weight:700;letter-spacing:.06em;text-transform:uppercase">Problem → Service</p>
+        <h3 style="margin-top:8px">"Sales lives in spreadsheets."</h3>
+        <p style="color:var(--muted);font-size:14px;margin-top:8px">We ship a portal in 2–3 weeks. Same data, real permissions, searchable, auditable.</p>
+        <div style="margin-top:14px;display:flex;gap:8px;align-items:center"><span class="tag" style="background:var(--fg);color:white;border-color:var(--fg)">Tools</span><span class="meta">→ Portal</span></div>
+      </div>
+      <div class="card" style="padding:22px">
+        <p class="meta" style="color:var(--accent);font-weight:700;letter-spacing:.06em;text-transform:uppercase">Problem → Service</p>
+        <h3 style="margin-top:8px">"We pay more as we grow."</h3>
+        <p style="color:var(--muted);font-size:14px;margin-top:8px">FinOps pass + autoscale. Most teams cut 25–45% without touching product code.</p>
+        <div style="margin-top:14px;display:flex;gap:8px;align-items:center"><span class="tag" style="background:var(--fg);color:white;border-color:var(--fg)">Cloud</span><span class="meta">→ Cost tune</span></div>
+      </div>
+      <div class="card" style="padding:22px">
+        <p class="meta" style="color:var(--accent);font-weight:700;letter-spacing:.06em;text-transform:uppercase">Problem → Service</p>
+        <h3 style="margin-top:8px">"Our launch got no buzz."</h3>
+        <p style="color:var(--muted);font-size:14px;margin-top:8px">Launch with a playable moment. People share a score, not a press release.</p>
+        <div style="margin-top:14px;display:flex;gap:8px;align-items:center"><span class="tag" style="background:var(--fg);color:white;border-color:var(--fg)">Games</span><span class="meta">→ Launch game</span></div>
+      </div>
+      <div class="card" style="padding:22px">
+        <p class="meta" style="color:var(--accent);font-weight:700;letter-spacing:.06em;text-transform:uppercase">Problem → Service</p>
+        <h3 style="margin-top:8px">"We have the content, not the traffic."</h3>
+        <p style="color:var(--muted);font-size:14px;margin-top:8px">Topic clusters, internal linking, and programmatic pages — built into the CMS, not bolted on.</p>
+        <div style="margin-top:14px;display:flex;gap:8px;align-items:center"><span class="tag" style="background:var(--fg);color:white;border-color:var(--fg)">Websites</span><span class="meta">→ SEO system</span></div>
+      </div>
+      <div class="card" style="padding:22px;border:1.5px dashed var(--border);background:transparent">
+        <h3>Tell us yours</h3>
+        <p style="color:var(--muted);font-size:14px;margin-top:8px">In 45 minutes we map your pain to the right service — and tell you if you don't need us at all.</p>
+        <a href="#contact" class="btn btn-secondary btn-sm" style="margin-top:14px">Book diagnostic — free</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEO & PERFORMANCE DEEP DIVE -->
+<section id="seo" class="section">
+  <div class="container grid-1-2">
+    <div>
+      <p class="eyebrow">SEO, built in — not bolted on</p>
+      <h2>Google-ready by construction</h2>
+      <p class="lead" style="margin-top:10px;font-size:16px">Every WIRON surface ships with the SEO plumbing already wired — so your team publishes, and search does the rest.</p>
+      <div style="margin-top:22px;display:grid;gap:14px">
+        <div class="row" style="align-items:start;gap:12px">
+          <span style="width:28px;height:28px;border-radius:50%;background:var(--accent);color:white;display:grid;place-items:center;flex:0 0 28px;font-size:12px;font-weight:800">1</span>
+          <div><strong style="font-size:14px">Semantic & structured</strong><p class="meta" style="margin:4px 0 0;line-height:1.5">Clean HTML5, JSON-LD (Organization, Product, FAQ, Breadcrumb), canonical & hreflang, sitemap.xml + robots.txt auto-updated on publish.</p></div>
+        </div>
+        <div class="row" style="align-items:start;gap:12px">
+          <span style="width:28px;height:28px;border-radius:50%;background:var(--accent);color:white;display:grid;place-items:center;flex:0 0 28px;font-size:12px;font-weight:800">2</span>
+          <div><strong style="font-size:14px">Speed is ranking</strong><p class="meta" style="margin:4px 0 0;line-height:1.5">Image optimization, edge cache, font subsetting, and a CI performance budget — builds fail if LCP regresses.</p></div>
+        </div>
+        <div class="row" style="align-items:start;gap:12px">
+          <span style="width:28px;height:28px;border-radius:50%;background:var(--accent);color:white;display:grid;place-items:center;flex:0 0 28px;font-size:12px;font-weight:800">3</span>
+          <div><strong style="font-size:14px">Content that compounds</strong><p class="meta" style="margin:4px 0 0;line-height:1.5">Topic clusters, programmatic SEO, and internal linking generated from your content model — not manual cross-links.</p></div>
+        </div>
+      </div>
+      <div style="margin-top:18px;display:flex;gap:8px;flex-wrap:wrap"><span class="tag">Core Web Vitals</span><span class="tag">Schema.org</span><span class="tag">Open Graph</span><span class="tag">sitemap.xml</span><span class="tag">hreflang</span></div>
+    </div>
+    <div class="card" style="padding:20px">
+      <div class="row-between" style="margin-bottom:14px"><p class="meta" style="font-weight:700;color:var(--fg);letter-spacing:.05em;text-transform:uppercase">SEO health — sample audit</p><span class="pill">Live check</span></div>
+      <div style="display:grid;gap:10px">
+        <div class="row" style="justify-content:space-between;padding:12px 14px;background:var(--bg);border:1px solid var(--border);border-radius:12px"><span style="font-size:13px;font-weight:600">Lighthouse SEO</span><span style="display:flex;align-items:center;gap:8px"><span class="num" style="font-weight:800;color:oklch(64% 0.16 145)">100</span><span style="width:72px;height:6px;background:var(--border);border-radius:999px;overflow:hidden"></span></span></div>
+        <div class="row" style="justify-content:space-between;padding:12px 14px;background:var(--bg);border:1px solid var(--border);border-radius:12px"><span style="font-size:13px;font-weight:600">Performance</span><span style="display:flex;align-items:center;gap:8px"><span class="num" style="font-weight:800">98</span><span style="width:72px;height:6px;background:var(--border);border-radius:999px;overflow:hidden"></span></span></div>
+        <div class="row" style="justify-content:space-between;padding:12px 14px;background:var(--bg);border:1px solid var(--border);border-radius:12px"><span style="font-size:13px;font-weight:600">Accessibility</span><span style="display:flex;align-items:center;gap:8px"><span class="num" style="font-weight:800">99</span><span style="width:72px;height:6px;background:var(--border);border-radius:999px;overflow:hidden"></span></span></div>
+        <div class="row" style="justify-content:space-between;padding:12px 14px;background:var(--bg);border:1px solid var(--border);border-radius:12px"><span style="font-size:13px;font-weight:600">Structured data</span><span class="pill" style="background:oklch(64% 0.16 145);color:white">Valid ✓</span></div>
+      </div>
+      <div class="card" style="margin-top:14px;background:var(--fg);color:var(--surface);border-color:var(--fg);padding:16px">
+        <p style="margin:0;font-size:13px;font-weight:600;letter-spacing:-.01em">What you get on every publish</p>
+        <p style="margin:6px 0 0;font-size:13px;color:color-mix(in oklch, white 72%, transparent);line-height:1.5">Auto-generated meta title/description, OG image, canonical, breadcrumb JSON-LD, and instant cache purge. No plugin to remember.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK / PROOF -->
+<section id="work" class="section">
+  <div class="container">
+    <div class="row-between" style="align-items:end;flex-wrap:wrap;margin-bottom:26px">
+      <div style="max-width:48ch">
+        <p class="eyebrow">Selected work — One brand, every service</p>
+        <h2>From first byte to last level.</h2>
+      </div>
+      <a href="#contact" class="btn btn-ghost btn-arrow">View all case studies</a>
+    </div>
+
+    <div class="grid-2">
+      <article class="card" style="padding:0;overflow:hidden">
+        <div style="height:200px;background:linear-gradient(135deg, oklch(62% 0.22 26) 0%, oklch(72% 0.14 45) 55%, oklch(88% 0.06 85) 100%);display:grid;place-items:center;color:white;position:relative">
+          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.92;background:color-mix(in oklch, black 28%, transparent);padding:6px 10px;border-radius:999px">Website · Fintech</span>
+          <span style="position:absolute;bottom:12px;left:14px;font-size:12px;opacity:.9;font-family:var(--font-mono)">LCP 0.9s · +188% organic</span>
+          <span style="position:absolute;bottom:12px;right:14px;font-size:12px;opacity:.9;font-family:var(--font-mono)">wiron.studio/work/atlas</span>
+        </div>
+        <div style="padding:20px">
+          <h3>Atlas — Headless site that pays for itself</h3>
+          <p style="color:var(--muted);font-size:14px;margin-top:6px">Migrated from Webflow to headless in 4 weeks. Editors publish daily without devs. Search traffic doubled in 90 days.</p>
+          <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap"><span class="tag">Next.js</span><span class="tag">Sanity</span><span class="tag">Edge</span></div>
+        </div>
+      </article>
+
+      <article class="card" style="padding:0;overflow:hidden">
+        <div style="height:200px;background:linear-gradient(135deg, oklch(22% 0.02 250) 0%, oklch(32% 0.06 250) 50%, oklch(52% 0.14 255) 100%);display:grid;place-items:center;color:white;position:relative">
+          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.92;background:color-mix(in oklch, white 14%, transparent);padding:6px 10px;border-radius:999px">Cloud · Marketplace</span>
+          <span style="position:absolute;bottom:12px;left:14px;font-size:12px;opacity:.9;font-family:var(--font-mono)">−38% infra · 99.99% uptime</span>
+          <span style="position:absolute;bottom:12px;right:14px;font-size:12px;opacity:.9;font-family:var(--font-mono)">Wiron Cloud</span>
+        </div>
+        <div style="padding:20px">
+          <h3>Mercato — Cost-aware scale</h3>
+          <p style="color:var(--muted);font-size:14px;margin-top:6px">Re-platformed to autoscaling containers + edge cache. Handled 11× Black Friday spike on 40% less spend.</p>
+          <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap"><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Observability</span></div>
+        </div>
+      </article>
+
+      <article class="card" style="padding:0;overflow:hidden">
+        <div style="height:200px;background:linear-gradient(135deg, oklch(68% 0.16 145) 0%, oklch(78% 0.12 145) 60%, oklch(92% 0.05 145) 100%);display:grid;place-items:center;color:oklch(18% 0.02 145);position:relative">
+          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:white;padding:6px 10px;border-radius:999px;border:1px solid var(--border)">Tools · Operations</span>
+          <span style="position:absolute;bottom:12px;left:14px;font-size:12px;opacity:.85;font-family:var(--font-mono)">Tool adopted in 6 days</span>
+        </div>
+        <div style="padding:20px">
+          <h3>Flowdesk — From Sheets to system</h3>
+          <p style="color:var(--muted);font-size:14px;margin-top:6px">Internal portal for a 45-person agency. Approvals, resourcing and invoicing in one place. No more "which sheet?"</p>
+          <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap"><span class="tag">Portal</span><span class="tag">Postgres</span><span class="tag">Stripe</span></div>
+        </div>
+      </article>
+
+      <article class="card" style="padding:0;overflow:hidden">
+        <div style="height:200px;background:linear-gradient(135deg, oklch(62% 0.18 320) 0%, oklch(70% 0.15 320) 50%, oklch(88% 0.06 320) 100%);display:grid;place-items:center;color:white;position:relative">
+          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:color-mix(in oklch, black 18%, transparent);padding:6px 10px;border-radius:999px">Games · Launch</span>
+          <span style="position:absolute;bottom:12px;left:14px;font-size:12px;opacity:.9;font-family:var(--font-mono)">41k plays · 28% share rate</span>
+        </div>
+        <div style="padding:20px">
+          <h3>LUMEN — Play the drop</h3>
+          <p style="color:var(--muted);font-size:14px;margin-top:6px">A 90-second web game for a product drop. Leaderboard + reward codes drove the highest launch-day revenue that quarter.</p>
+          <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap"><span class="tag">WebGL</span><span class="tag">Multiplayer</span><span class="tag">Rewards</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="card" style="margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <p class="meta" style="color:var(--fg);font-weight:600">We document every project like a product — handover docs, runbooks, and content guides included.</p>
+      <a href="#contact" class="btn btn-secondary btn-sm">Request full portfolio →</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats" class="section">
+  <div class="container">
+    <p class="eyebrow" style="margin-bottom:32px">How we measure "done"</p>
+    <div class="grid-3">
+      <div class="stat">
+        <div class="stat-num num">1.1<span style="font-size:.45em;opacity:.6">s</span></div>
+        <p class="stat-label">Median LCP across WIRON sites — measured on real user data, not lab.</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num num">+214<span style="font-size:.45em;opacity:.6">%</span></div>
+        <p class="stat-label">Average organic traffic lift 90 days after a WIRON rebuild.</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num num">99.9<span style="font-size:.45em;opacity:.6">%</span></div>
+        <p class="stat-label">Uptime target we contract for Cloud — with SLOs, not promises.</p>
+      </div>
+    </div>
+    <p class="meta" style="margin-top:18px;max-width:62ch">Numbers from aggregated anonymized WIRON engagements, 2024–2026. Your mileage varies — we show your forecast before you sign.</p>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div style="text-align:center;max-width:56ch;margin:0 auto 36px">
+      <p class="eyebrow">Pricing — Start focused, expand when it works</p>
+      <h2>Every project starts small. You scale what proves itself.</h2>
+      <p class="lead" style="margin:12px auto 0;font-size:16px">Fixed-price entry, then retainer or SLAs. No lock-in. You own everything we build.</p>
+    </div>
+
+    <div style="display:flex;justify-content:center;margin-bottom:18px">
+      <div style="display:inline-flex;background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:4px;gap:4px">
+        <button class="btn btn-sm" id="billMonthly" style="background:var(--fg);color:var(--surface);border-radius:999px;padding:8px 16px">Monthly</button>
+        <button class="btn btn-sm" id="billYearly" style="background:transparent;color:var(--muted);border-radius:999px;padding:8px 16px">Yearly <span style="background:var(--accent-soft);color:var(--accent);padding:2px 6px;border-radius:999px;font-size:11px;margin-left:6px">−15%</span></button>
+      </div>
+    </div>
+
+    <div style="overflow:auto">
+      <table class="ds-table" style="min-width:720px">
+        <thead>
+          <tr>
+            <th style="width:28%">Service</th>
+            <th class="num-col">Starter</th>
+            <th class="num-col" style="background:var(--accent-soft)">Growth</th>
+            <th class="num-col">WIRON</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>WIRON Websites</strong><br><span class="meta">Marketing / product site</span></td>
+            <td class="num-col"><span class="num price" data-monthly="$4.9k" data-yearly="$4.2k">$4.9k</span><br><span class="meta">one-off</span></td>
+            <td class="num-col" style="background:color-mix(in oklch, var(--accent) 6%, transparent)"><span class="num price" data-monthly="$12k" data-yearly="$10.2k">$12k</span><br><span class="meta">+ CMS + SEO system</span></td>
+            <td class="num-col"><span class="num">$28k+</span><br><span class="meta">multi-site / i18n</span></td>
+          </tr>
+          <tr>
+            <td><strong>WIRON Tools</strong><br><span class="meta">Portal / automation</span></td>
+            <td class="num-col"><span class="num price" data-monthly="$6k" data-yearly="$5.1k">$6k</span></td>
+            <td class="num-col" style="background:color-mix(in oklch, var(--accent) 6%, transparent)"><span class="num price" data-monthly="$14k" data-yearly="$11.9k">$14k</span></td>
+            <td class="num-col"><span class="num">Custom</span></td>
+          </tr>
+          <tr>
+            <td><strong>WIRON Cloud</strong><br><span class="meta">Migration / optimization</span></td>
+            <td class="num-col"><span class="num">Audit $2.5k</span></td>
+            <td class="num-col" style="background:color-mix(in oklch, var(--accent) 6%, transparent)"><span class="num price" data-monthly="$3.2k/mo" data-yearly="$2.7k/mo">$3.2k/mo</span></td>
+            <td class="num-col"><span class="num">SLA</span></td>
+          </tr>
+          <tr>
+            <td><strong>WIRON Games</strong><br><span class="meta">Web game / quest</span></td>
+            <td class="num-col"><span class="num price" data-monthly="$5.5k" data-yearly="$4.7k">$5.5k</span></td>
+            <td class="num-col" style="background:color-mix(in oklch, var(--accent) 6%, transparent)"><span class="num price" data-monthly="$13k" data-yearly="$11k">$13k</span><br><span class="meta">+ rewards</span></td>
+            <td class="num-col"><span class="num">Season pass</span></td>
+          </tr>
+          <tr style="border-top:1.5px solid var(--fg)">
+            <td><strong>Includes</strong></td>
+            <td class="num-col meta">Handover + docs</td>
+            <td class="num-col meta" style="font-weight:700;color:var(--accent)">Everything in Starter + 30d support</td>
+            <td class="num-col meta">Roadmap + SLOs</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="meta" style="text-align:center;margin-top:14px">Need a bundle? Most teams start with <strong style="color:var(--fg)">Websites Growth</strong> and add Cloud or Tools in month two.</p>
+  </div>
+</section>
+
+<!-- KNOWLEDGE / SEO CONTENT HUB -->
+<section id="knowledge" class="section">
+  <div class="container">
+    <div class="row-between" style="margin-bottom:20px;flex-wrap:wrap">
+      <div>
+        <p class="eyebrow">Knowledge — Answers before the call</p>
+        <h2>What customers search, we answer.</h2>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="tag">Guides</span><span class="tag">Changelog</span><span class="tag">Glossary</span></div>
+    </div>
+
+    <div id="logList">
+      <article class="log-row" data-keywords="headless cms seo migration nextjs">
+        <span class="meta">Sep 02, 2026</span>
+        <div>
+          <h3>Headless CMS without losing SEO</h3>
+          <p style="margin:4px 0 0;color:var(--muted);font-size:14px">How we keep slugs, metadata and internal linking intact when moving off WordPress.</p>
+          <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><span class="tag" style="font-size:11px">Websites</span><span class="tag" style="font-size:11px">SEO</span></div>
+        </div>
+        <span class="pull meta">Guide · 8 min</span>
+      </article>
+      <article class="log-row" data-keywords="cloud migration zero downtime terraform">
+        <span class="meta">Aug 18, 2026</span>
+        <div>
+          <h3>Zero-downtime cloud migration — the real checklist</h3>
+          <p style="margin:4px 0 0;color:var(--muted);font-size:14px">The 14 steps we run before we move a single byte. No heroic midnight deploys.</p>
+          <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><span class="tag" style="font-size:11px">Cloud</span></div>
+        </div>
+        <span class="pull meta">Playbook · 11 min</span>
+      </article>
+      <article class="log-row" data-keywords="tool automation portal nocode spreadsheet">
+        <span class="meta">Jul 29, 2026</span>
+        <div>
+          <h3>Spreadsheet → Portal in 11 days</h3>
+          <p style="margin:4px 0 0;color:var(--muted);font-size:14px">A teardown of the Flowdesk build: schema, permissions, and the adoption trick that made it stick.</p>
+          <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><span class="tag" style="font-size:11px">Tools</span></div>
+        </div>
+        <span class="pull meta">Case note · 6 min</span>
+      </article>
+      <article class="log-row" data-keywords="game launch webgl multiplayer retention">
+        <span class="meta">Jul 11, 2026</span>
+        <div>
+          <h3>Why launches need a game, not a banner</h3>
+          <p style="margin:4px 0 0;color:var(--muted);font-size:14px">Play time, share rate and return visits beat impressions when attention is scarce.</p>
+          <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><span class="tag" style="font-size:11px">Games</span></div>
+        </div>
+        <span class="pull meta">Essay · 5 min</span>
+      </article>
+      <article class="log-row" data-keywords="performance core web vitals lcp speed">
+        <span class="meta">Jun 24, 2026</span>
+        <div>
+          <h3>Core Web Vitals as a budget, not a score</h3>
+          <p style="margin:4px 0 0;color:var(--muted);font-size:14px">How we enforce LCP/CLS in CI so performance never regresses after launch.</p>
+          <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><span class="tag" style="font-size:11px">Performance</span></div>
+        </div>
+        <span class="pull meta">Guide · 7 min</span>
+      </article>
+    </div>
+    <p class="meta" id="noResults" style="display:none;text-align:center;padding:18px">No articles match that search. Try "cloud", "seo", or "game".</p>
+    <div style="text-align:center;margin-top:18px"><a href="#" class="btn btn-secondary btn-sm">Browse all guides →</a></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container" style="max-width:860px">
+    <p class="eyebrow" style="text-align:center">FAQ — Straight answers</p>
+    <h2 style="text-align:center">If you're wondering, someone else already asked.</h2>
+    <div style="margin-top:28px">
+      <div class="faq-item open">
+        <div class="faq-q"><h3>We already have a site. Do you do rebuilds and migrations?</h3><span class="chev">⌄</span></div>
+        <div class="faq-a"><p>Yes — most of our Websites work is a rebuild or migration. We start with a crawl + parity audit, map every URL, and keep ranking through the switch with staged redirects and Search Console monitoring.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Will we be locked into WIRON hosting or a proprietary CMS?</h3><span class="chev">⌄</span></div>
+        <div class="faq-a"><p>No. You own the repo, the content, and the infra. We build on open standards (Next.js / Astro, headless CMS, standard Postgres/Redis, Terraform). You can self-host or stay with us.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Who does SEO — you or our marketing team?</h3><span class="chev">⌄</span></div>
+        <div class="faq-a"><p>Both. We ship the system (IA, templates, structured data, sitemaps, performance) and co-author the first topic clusters. Your team then publishes in the CMS — the SEO plumbing is already there.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>How do Tools and Cloud fit together?</h3><span class="chev">⌄</span></div>
+        <div class="faq-a"><p>Teams that start with a portal often ask us to host it. We keep one backlog across Tools + Cloud so the product and its infra evolve together — no ticket tennis between vendors.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Do games only make sense for consumer brands?</h3><span class="chev">⌄</span></div>
+        <div class="faq-a"><p>Not at all. B2B teams use games for onboarding, training, and event engagement — interactive beats a slide deck. We measure completion and recall, not just "fun."</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section" style="background:var(--surface);border-top:1px solid var(--border)">
+  <div class="container grid-1-2">
+    <div>
+      <p class="eyebrow">Start here</p>
+      <h2>Tell us the problem.<br>We'll point you to the right service.</h2>
+      <p class="lead" style="margin-top:10px;font-size:16px">45 minutes. No pitch deck, just a ranked backlog and a clear next step — even if that step isn't WIRON.</p>
+      <div style="margin-top:20px;display:grid;gap:10px">
+        <div class="row" style="gap:10px"><span style="width:32px;height:32px;border-radius:50%;background:var(--bg);border:1px solid var(--border);display:grid;place-items:center">✉</span><span style="font-size:14px"><strong>hello@wiron.studio</strong> <span class="meta">· reply in ~2h</span></span></div>
+        <div class="row" style="gap:10px"><span style="width:32px;height:32px;border-radius:50%;background:var(--bg);border:1px solid var(--border);display:grid;place-items:center">◉</span><span style="font-size:14px"><strong>Remote-first, on-site when it helps</strong> <span class="meta">· EU / APAC hours</span></span></div>
+      </div>
+      <div style="margin-top:18px;display:flex;gap:8px;flex-wrap:wrap"><span class="pill">No lock-in</span><span class="tag">You own the code</span><span class="tag">Docs included</span></div>
+    </div>
+    <form class="card" id="contactForm" style="padding:22px;display:grid;gap:14px" novalidate>
+      <div class="grid-2" style="gap:14px">
+        <div class="field"><label for="name">Your name</label><input id="name" class="input" placeholder="Alex Rivera"/></div>
+        <div class="field"><label for="email">Work email</label><input id="email" type="email" class="input" placeholder="alex@company.com"/></div>
+      </div>
+      <div class="field">
+        <label>Which service sounds closest?</label>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:2px">
+          <label style="display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--border);border-radius:999px;font-size:13px;cursor:pointer"><input type="radio" name="branch" value="websites" checked/> Websites</label>
+          <label style="display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--border);border-radius:999px;font-size:13px;cursor:pointer"><input type="radio" name="branch" value="tools"/> Tools</label>
+          <label style="display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--border);border-radius:999px;font-size:13px;cursor:pointer"><input type="radio" name="branch" value="cloud"/> Cloud</label>
+          <label style="display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--border);border-radius:999px;font-size:13px;cursor:pointer"><input type="radio" name="branch" value="games"/> Games</label>
+        </div>
+      </div>
+      <div class="field"><label for="msg">What problem are you trying to solve?</label><textarea id="msg" class="textarea" placeholder="e.g. Our marketing site is slow, content is stuck in Figma, and inbound has flatlined for 3 months…"></textarea></div>
+      <label style="display:flex;gap:8px;align-items:start;font-size:13px;color:var(--muted)"><input type="checkbox" id="consent" style="margin-top:3px"/> I agree to be contacted about this inquiry. No newsletter unless I opt in.</label>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Request diagnostic — free</button>
+      <p class="meta" style="text-align:center">By submitting, you agree to our privacy policy. We never share your data.</p>
+      <p id="formStatus" class="meta" style="display:none;text-align:center;padding:10px;background:var(--accent-soft);border-radius:10px;color:var(--accent);font-weight:600"></p>
+    </form>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section id="cta-strip" class="section" style="text-align:center;background:var(--fg);color:var(--surface);border-top:0">
+  <div class="container" style="max-width:680px">
+    <p style="font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:color-mix(in oklch, white 62%, transparent);margin:0 0 12px">WIRON</p>
+    <h2 style="color:var(--surface)">One brand to build it. One brand to grow it.</h2>
+    <p class="lead" style="color:color-mix(in oklch, white 68%, transparent);margin:14px auto 28px">Websites, tools, cloud and games — connected by design, not by slideware.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <a href="#contact" class="btn btn-primary" style="background:var(--surface);color:var(--fg);border-color:var(--surface)">Start with WIRON</a>
+      <a href="#services" class="btn" style="background:transparent;color:var(--surface);border-color:color-mix(in oklch, white 22%, transparent)">Explore services</a>
+    </div>
+  </div>
+</section>
+
+
+
+<script is:inline>
+// service tabs
+document.querySelectorAll('.svc-tab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.svc-tab').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-selected','false')});
+    btn.classList.add('active');btn.setAttribute('aria-selected','true');
+    document.querySelectorAll('.svc-panel').forEach(p=>p.classList.remove('active'));
+    document.getElementById('panel-'+btn.dataset.tab).classList.add('active');
+  });
+});
+
+// billing toggle
+const billM=document.getElementById('billMonthly'), billY=document.getElementById('billYearly');
+function setBilling(mode){
+  const yearly = mode==='yearly';
+  billY.style.background = yearly?'var(--fg)':'transparent';
+  billY.style.color = yearly?'var(--surface)':'var(--muted)';
+  billM.style.background = yearly?'transparent':'var(--fg)';
+  billM.style.color = yearly?'var(--muted)':'var(--surface)';
+  document.querySelectorAll('.price').forEach(el=>{
+    el.textContent = yearly? el.dataset.yearly : el.dataset.monthly;
+  });
+}
+billM.addEventListener('click',()=>setBilling('monthly'));
+billY.addEventListener('click',()=>setBilling('yearly'));
+
+// faq accordion
+document.querySelectorAll('.faq-item').forEach(item=>{
+  item.querySelector('.faq-q').addEventListener('click',()=>{
+    const wasOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!wasOpen) item.classList.add('open');
+  });
+});
+
+// site search (client-side filter over knowledge + scroll to services)
+const searchInput=document.getElementById('siteSearch');
+const logList=document.getElementById('logList');
+const hint=document.getElementById('searchHint');
+const noRes=document.getElementById('noResults');
+function doSearch(q){
+  q=q.trim().toLowerCase();
+  if(!q){
+    logList.querySelectorAll('.log-row').forEach(r=>r.style.display='');
+    noRes.style.display='none';
+    hint.textContent='Try: website speed, cloud migration, tool automation, multiplayer';
+    return;
+  }
+  let visible=0;
+  logList.querySelectorAll('.log-row').forEach(r=>{
+    const hay=(r.textContent+' '+(r.dataset.keywords||'')).toLowerCase();
+    const show=hay.includes(q);
+    r.style.display=show?'':'none';
+    if(show) visible++;
+  });
+  noRes.style.display=visible?'none':'block';
+  hint.textContent=visible? visible+' result'+(visible>1?'s':'')+' · press Enter to jump to knowledge' : 'No matches — try a different term';
+  // highlight services if query matches branch
+  if(['website','tool','cloud','game'].some(k=>q.includes(k))){
+    document.getElementById('services').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+}
+let t;
+searchInput.addEventListener('input',e=>{
+  clearTimeout(t); t=setTimeout(()=>doSearch(e.target.value),180);
+});
+searchInput.addEventListener('keydown',e=>{
+  if(e.key==='Enter'){
+    e.preventDefault();
+    const q=searchInput.value.trim().toLowerCase();
+    if(q) document.getElementById('knowledge').scrollIntoView({behavior:'smooth'});
+  }
+});
+
+// contact form
+document.getElementById('contactForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=document.getElementById('name').value.trim();
+  const email=document.getElementById('email').value.trim();
+  const msg=document.getElementById('msg').value.trim();
+  const consent=document.getElementById('consent').checked;
+  const status=document.getElementById('formStatus');
+  if(!name || !email || !msg){ status.style.display='block'; status.textContent='Please fill name, email and your problem.'; status.style.background='oklch(96% 0.04 25)'; status.style.color='oklch(55% 0.2 25)'; return; }
+  if(!consent){ status.style.display='block'; status.textContent='Please confirm you agree to be contacted.'; status.style.background='oklch(96% 0.04 25)'; status.style.color='oklch(55% 0.2 25)'; return; }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ status.style.display='block'; status.textContent='Please enter a valid work email.'; status.style.background='oklch(96% 0.04 25)'; status.style.color='oklch(55% 0.2 25)'; return; }
+  status.style.display='block';
+  status.style.background='var(--accent-soft)'; status.style.color='var(--accent)';
+  status.textContent='Thanks, '+name.split(' ')[0]+' — we\'ll reply within ~2 hours with next steps for your '+ (document.querySelector('input[name="branch"]:checked')?.value || 'project')+' branch.';
+  e.target.reset();
+});
+</script>
 </BaseLayout>
