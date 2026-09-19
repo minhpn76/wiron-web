@@ -1,14 +1,14 @@
 # docs/specs/
 
-Mỗi feature/task đáng kể có 1 thư mục con:
+Each significant feature/task has its own subdirectory:
 
 ```
 docs/specs/<feature-slug>/
-├── intent.md   # why — skill `intent`
-├── spec.md     # cái gì đúng khi xong — skill `spec`
-└── plan.md     # cách làm — skill `plan`, chạy ở plan mode
+├── intent.md   # why — skill `intent` (/intent)
+├── spec.md     # what is correct when done — skill `spec` (/spec)
+└── plan.md     # how — skill `plan` in plan mode (/plan)
 ```
 
-Thứ tự bắt buộc: intent → spec → plan. Mỗi file cần được người duyệt (comment/merge PR, hoặc xác nhận trực tiếp trong chat) trước khi sang bước kế.
+Required order: intent → spec → plan. Each file must be approved (PR comment/merge or direct chat confirmation) before moving to the next step.
 
-Bug fix nhỏ, rõ nguyên nhân: có thể bỏ qua intent/spec, chỉ cần `plan.md` ngắn.
+Small bug fix with clear root cause: intent/spec may be skipped, only a short `plan.md` is needed.

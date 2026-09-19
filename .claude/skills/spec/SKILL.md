@@ -1,41 +1,41 @@
 ---
 name: spec
-description: Dùng sau khi intent.md đã được duyệt — viết docs/specs/<feature>/spec.md mô tả acceptance criteria, không mô tả cách implement.
+description: Use after intent.md is approved — write docs/specs/<feature>/spec.md describing acceptance criteria without implementation details.
 ---
 
 # Spec
 
-Mục tiêu: chốt "cái gì đúng khi xong", không chốt cách làm. Đọc `intent.md` cùng feature trước khi viết.
+Goal: lock in "what is correct when done", not how to build it. Read the `intent.md` for the same feature before writing.
 
-## Việc cần làm
+## Tasks
 
-1. Đọc `docs/specs/<feature-slug>/intent.md`. Nếu chưa có hoặc chưa duyệt, dừng và yêu cầu chạy skill `intent` trước.
-2. Diễn giải intent thành acceptance criteria cụ thể, kiểm chứng được (đo được đúng/sai).
-3. Nêu case biên, lỗi, trạng thái rỗng nếu liên quan.
-4. Không đề cập file nào sẽ sửa, thứ tự code — đó là việc của `plan.md`.
-5. Viết `docs/specs/<feature-slug>/spec.md` theo template dưới, dừng lại chờ duyệt.
+1. Read `docs/specs/<feature-slug>/intent.md`. If it does not exist or is not approved, stop and ask to run the `intent` skill first.
+2. Translate the intent into specific, verifiable acceptance criteria (measurable pass/fail).
+3. List edge cases, error handling, and empty states if relevant.
+4. Do not mention which files will change or the implementation order — that belongs in `plan.md`.
+5. Write `docs/specs/<feature-slug>/spec.md` using the template below, then stop and wait for approval.
 
 ## Template spec.md
 
 ```markdown
-# Spec: <tên feature>
+# Spec: <feature name>
 
-- Dựa trên: intent.md (<ngày>)
+- Based on: intent.md (<date>)
 
 ## Acceptance criteria
-- [ ] <tiêu chí 1, đo được>
-- [ ] <tiêu chí 2>
+- [ ] <criterion 1, measurable>
+- [ ] <criterion 2>
 
-## Case biên / lỗi cần xử lý
-<liệt kê>
+## Edge cases / errors to handle
+<list>
 
-## Ngoài phạm vi
-<kế từ intent.md, nhắc lại nếu cần>
+## Out of scope
+<from intent.md, restate if needed>
 
-## Câu hỏi mở còn lại
-<nếu có>
+## Remaining open questions
+<if any>
 ```
 
-## Đầu ra
+## Output
 
-Commit `docs/specs/<feature-slug>/spec.md`. Không tự chuyển sang plan khi chưa có xác nhận duyệt.
+Commit `docs/specs/<feature-slug>/spec.md`. Do not move to plan without approval.

@@ -1,46 +1,46 @@
 ---
 name: intent
-description: Dùng đầu tiên khi có feature/task mới đáng kể — brainstorm và viết docs/specs/<feature>/intent.md trước khi bàn cách làm.
+description: Use first for any significant new feature/task — brainstorm and write docs/specs/<feature>/intent.md before discussing implementation.
 ---
 
 # Intent
 
-Mục tiêu: chốt WHY trước khi bàn HOW. Không đề xuất giải pháp trong bước này.
+Goal: lock in WHY before discussing HOW. Do not propose solutions in this step.
 
-## Việc cần làm
+## Tasks
 
-1. Hỏi người dùng (PM) nếu chưa rõ: vấn đề đang giải quyết là gì, cho đối tượng nào, tại sao cần bây giờ.
-2. Audit nhanh codebase/docs hiện có — xem đã có giải pháp/luồng tương tự chưa. Nếu có, nêu ra trước khi tiếp tục.
-3. Viết `docs/specs/<feature-slug>/intent.md` theo template dưới.
-4. Dừng lại, yêu cầu người dùng duyệt intent trước khi gợi ý dùng skill `spec`.
+1. Ask the user (PM) if unclear: what problem is being solved, for whom, why now.
+2. Quick audit of existing codebase/docs — check if a similar solution/flow already exists. If so, call it out before continuing.
+3. Write `docs/specs/<feature-slug>/intent.md` using the template below.
+4. Stop and ask the user to approve the intent before suggesting the `spec` skill.
 
 ## Template intent.md
 
 ```markdown
-# Intent: <tên feature>
+# Intent: <feature name>
 
-- Ngày: <YYYY-MM-DD>
-- Người yêu cầu: <tên>
+- Date: <YYYY-MM-DD>
+- Requested by: <name>
 
-## Vấn đề
-<vấn đề thực tế đang gặp, có bằng chứng/số liệu nếu có>
+## Problem
+<real problem being faced, with evidence/metrics if available>
 
-## Cho ai
-<đối tượng người dùng/hệ thống bị ảnh hưởng>
+## For whom
+<affected users/systems>
 
-## Vì sao bây giờ
-<mức độ ưu tiên, deadline, phụ thuộc>
+## Why now
+<priority, deadline, dependencies>
 
-## Constraint
-<ràng buộc kỹ thuật, ngân sách, thời gian, pháp lý>
+## Constraints
+<technical, budget, time, legal constraints>
 
-## Ngoài phạm vi
-<những gì KHÔNG làm trong lần này>
+## Out of scope
+<what will NOT be done this time>
 
-## Câu hỏi mở
-<những điểm chưa chốt, cần ai trả lời>
+## Open questions
+<unresolved points, who needs to answer>
 ```
 
-## Đầu ra
+## Output
 
-Commit `docs/specs/<feature-slug>/intent.md`. Không tự chuyển sang spec khi chưa có xác nhận duyệt.
+Commit `docs/specs/<feature-slug>/intent.md`. Do not move to spec without approval.

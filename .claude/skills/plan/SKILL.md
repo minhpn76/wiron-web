@@ -1,44 +1,44 @@
 ---
 name: plan
-description: Dùng sau khi spec.md đã được duyệt — vào plan mode, viết docs/specs/<feature>/plan.md (file, thứ tự, rủi ro, cách kiểm chứng) trước khi sửa code.
+description: Use after spec.md is approved — enter plan mode and write docs/specs/<feature>/plan.md (files, order, risks, verification) before touching code.
 ---
 
 # Plan
 
-Mục tiêu: chốt HOW ở dạng đọc được, duyệt được, trước khi động vào code. Chạy ở plan mode (read-only) — không sửa file trong bước này.
+Goal: lock in HOW in a readable, reviewable form before touching code. Runs in plan mode (read-only) — do not edit files in this step.
 
-## Việc cần làm
+## Tasks
 
-1. Đọc `docs/specs/<feature-slug>/spec.md`. Nếu chưa có hoặc chưa duyệt, dừng và yêu cầu chạy skill `spec` trước.
-2. Đọc code hiện có liên quan (đừng đoán).
-3. Xác định: file nào sẽ tạo/sửa, thứ tự thực hiện, test cần viết/chạy, bước rủi ro nhất, phương án đã xem xét và loại bỏ (nếu có).
-4. Viết `docs/specs/<feature-slug>/plan.md` theo template dưới.
-5. Dừng lại chờ duyệt. Chỉ sau khi được duyệt mới thoát plan mode và bắt đầu sửa code.
+1. Read `docs/specs/<feature-slug>/spec.md`. If it does not exist or is not approved, stop and ask to run the `spec` skill first.
+2. Read the relevant existing code (do not guess).
+3. Determine: which files to create/modify, execution order, tests to write/run, riskiest step, and alternatives considered and rejected (if any).
+4. Write `docs/specs/<feature-slug>/plan.md` using the template below.
+5. Stop and wait for approval. Only after approval, exit plan mode and start coding.
 
 ## Template plan.md
 
 ```markdown
-# Plan: <tên feature>
+# Plan: <feature name>
 
-- Dựa trên: spec.md (<ngày>)
+- Based on: spec.md (<date>)
 
-## File sẽ đổi
-- `path/to/file` — <lý do>
+## Files to change
+- `path/to/file` — <reason>
 
-## Thứ tự thực hiện
-1. <bước 1>
-2. <bước 2>
+## Execution order
+1. <step 1>
+2. <step 2>
 
-## Test / cách kiểm chứng
-<unit test, script chạy tay, tiêu chí pass>
+## Tests / verification
+<unit tests, manual scripts, pass criteria>
 
-## Rủi ro
-<bước dễ sai nhất, vì sao>
+## Risks
+<most error-prone step and why>
 
-## Phương án đã xem xét và loại bỏ
-<nếu có, và vì sao loại>
+## Alternatives considered and rejected
+<if any, and why rejected>
 ```
 
-## Đầu ra
+## Output
 
-Commit `docs/specs/<feature-slug>/plan.md`. Sau khi duyệt, code theo đúng plan — nếu lệch nhiều so với plan lúc code, cập nhật lại plan.md, không để nó lỗi thời.
+Commit `docs/specs/<feature-slug>/plan.md`. After approval, code according to the plan — if implementation diverges significantly, update plan.md so it stays accurate.

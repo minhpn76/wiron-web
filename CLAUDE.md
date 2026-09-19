@@ -1,41 +1,42 @@
 # CLAUDE.md
 
-Working agreement cho repo này. Claude tự load file này mỗi session.
+Working agreement for this repo. Claude loads this file every session.
 
 ## Workflow
 
-Feature/task đáng kể đi qua 3 file trước khi code, theo thứ tự:
+Every significant feature/task goes through 3 files before coding, in order:
 
-1. `docs/specs/<feature>/intent.md` — why, cho ai, constraint. Viết cùng Claude qua skill `intent` (hoặc `/intent`). Duyệt trước khi sang spec.
-2. `docs/specs/<feature>/spec.md` — cái gì đúng khi xong (acceptance criteria), không nói cách làm. Skill `spec` (`/spec`). Duyệt trước khi lập plan.
-3. `docs/specs/<feature>/plan.md` — cách làm: file nào, thứ tự, test, rủi ro. Dùng Claude Code **plan mode** (read-only) qua skill `plan` (`/plan`). Duyệt trước khi cho code chạy.
+1. `docs/specs/<feature>/intent.md` — why, for whom, constraints. Written with Claude via the `intent` skill (or `/intent`). Must be approved before moving to spec.
+2. `docs/specs/<feature>/spec.md` — what is correct when done (acceptance criteria), no implementation details. Skill `spec` (`/spec`). Must be approved before planning.
+3. `docs/specs/<feature>/plan.md` — how: which files, order, tests, risks. Uses Claude Code **plan mode** (read-only) via the `plan` skill (`/plan`). Must be approved before coding.
 
-Bug fix nhỏ (1-2 file, rõ nguyên nhân): bỏ qua intent/spec, chỉ cần `plan.md` ngắn hoặc không cần file nào nếu hiển nhiên.
+Small bug fix (1-2 files, clear root cause): skip intent/spec, only a short `plan.md` or no file at all if trivial.
 
-Sau khi code xong: agent `verifier` tự chạy build/test/lint trước khi đưa PR cho người review — xem `.claude/agents/verifier.md`.
+After coding: the `verifier` agent runs build/test/lint before human review — see `.claude/agents/verifier.md`.
 
 ## Commands
 
-- Dev: `npm run dev` — chạy Astro dev server (http://localhost:4321)
-- Build: `npm run build` — build production ra `dist/`
-- Preview: `npm run preview` — preview bản build
-- Lint: `npm run lint` (nếu có cấu hình eslint/prettier)
-- Test: `npm run test` (nếu có)
+- Dev: `npm run dev` — run Astro dev server (http://localhost:4321)
+- Build: `npm run build` — production build to `dist/`
+- Preview: `npm run preview` — preview the production build
+- Lint: `npm run lint` (if eslint/prettier is configured)
+- Test: `npm run test` (if configured)
 
 ## Conventions
 
-- **Stack:** Astro (SSG), TypeScript, HTML/CSS thuần theo design có sẵn.
-- **Follow HTML design:** Mọi trang/component phải bám sát HTML design đã duyệt — không tự ý đổi layout, spacing, màu, typo. Nếu design thiếu state/variant thì hỏi trước khi tự chế.
-- **Cấu trúc thư mục:**
-  - `src/pages/` — route Astro (mỗi file = 1 trang)
-  - `src/components/` — component Astro/UI tái sử dụng
-  - `src/layouts/` — layout chung (BaseLayout, header/footer)
-  - `src/styles/` — global CSS / tokens
-  - `public/` — asset tĩnh (image, font, favicon)
-  - `docs/specs/<feature>/` — intent/spec/plan theo workflow trên
-- **Code style:** Ưu tiên semantic HTML, CSS theo design tokens, hạn chế JS không cần thiết (Astro islands khi cần interactivity). Đặt tên file kebab-case, component PascalCase.
-- **Commit/branch:** `feat/<slug>`, `fix/<slug>`, commit message rõ ràng (conventional commits khuyến khích).
+- **Stack:** Astro (SSG), TypeScript, plain HTML/CSS following the existing design.
+- **Follow HTML design:** Every page/component must match the HTML design in `/html` — do not change layout, spacing, colors, or typography on your own. If the design is missing a state/variant, ask before inventing one.
+- **Directory structure:**
+  - `src/pages/` — Astro routes (one file = one page)
+  - `src/components/` — reusable Astro/UI components
+  - `src/layouts/` — shared layouts (BaseLayout, header/footer)
+  - `src/styles/` — global CSS / design tokens
+  - `public/` — static assets (images, fonts, favicon)
+  - `docs/specs/<feature>/` — intent/spec/plan per workflow above
+  - `html/` — HTML design reference (source of truth for UI)
+- **Code style:** Prefer semantic HTML, CSS via design tokens, minimal JS (Astro islands only when interactivity is needed). File names kebab-case, components PascalCase.
+- **Branch/commit:** `feat/<slug>`, `fix/<slug>`, clear commit messages (conventional commits encouraged).
 
 ## Known gotchas
 
-<cập nhật khi cùng một lỗi lặp lại quá 1 lần — đây là chỗ để agent không mắc lại>
+<update when the same mistake repeats more than once — prevents the agent from repeating it>
