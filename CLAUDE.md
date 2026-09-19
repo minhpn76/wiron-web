@@ -16,13 +16,25 @@ Sau khi code xong: agent `verifier` tự chạy build/test/lint trước khi đ�
 
 ## Commands
 
-- Build: `<điền lệnh build>`
-- Test: `<điền lệnh test>`
-- Lint: `<điền lệnh lint>`
+- Dev: `npm run dev` — chạy Astro dev server (http://localhost:4321)
+- Build: `npm run build` — build production ra `dist/`
+- Preview: `npm run preview` — preview bản build
+- Lint: `npm run lint` (nếu có cấu hình eslint/prettier)
+- Test: `npm run test` (nếu có)
 
 ## Conventions
 
-<điền convention code style, cấu trúc thư mục, ngôn ngữ dùng trong repo>
+- **Stack:** Astro (SSG), TypeScript, HTML/CSS thuần theo design có sẵn.
+- **Follow HTML design:** Mọi trang/component phải bám sát HTML design đã duyệt — không tự ý đổi layout, spacing, màu, typo. Nếu design thiếu state/variant thì hỏi trước khi tự chế.
+- **Cấu trúc thư mục:**
+  - `src/pages/` — route Astro (mỗi file = 1 trang)
+  - `src/components/` — component Astro/UI tái sử dụng
+  - `src/layouts/` — layout chung (BaseLayout, header/footer)
+  - `src/styles/` — global CSS / tokens
+  - `public/` — asset tĩnh (image, font, favicon)
+  - `docs/specs/<feature>/` — intent/spec/plan theo workflow trên
+- **Code style:** Ưu tiên semantic HTML, CSS theo design tokens, hạn chế JS không cần thiết (Astro islands khi cần interactivity). Đặt tên file kebab-case, component PascalCase.
+- **Commit/branch:** `feat/<slug>`, `fix/<slug>`, commit message rõ ràng (conventional commits khuyến khích).
 
 ## Known gotchas
 
